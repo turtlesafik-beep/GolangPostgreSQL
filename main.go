@@ -23,7 +23,7 @@ func main() {
 		panic(err)
 	}
 
-	_ = tasks
+	fmt.Println(tasks)
 
 	fmt.Println("succeed!")
 }
