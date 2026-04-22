@@ -18,24 +18,12 @@ func main() {
 		panic(err)
 	}
 
-	// if err := simple_sql.InsertRow(
-	// 	ctx,
-	// 	conn,
-	// 	"Обед3",
-	// 	"Покушать борщика",
-	// 	false,
-	// 	time.Now(),
-	// ); err != nil {
-	// 	panic(err)
-	// }
-
-	if err := simple_sql.UpdateRaw(ctx, conn); err != nil {
+	tasks, err := simple_sql.SelectRows(ctx, conn)
+	if err != nil {
 		panic(err)
 	}
 
-	if err := simple_sql.DeleteRow(ctx, conn); err != nil {
-		panic(err)
-	}
+	_ = tasks
 
 	fmt.Println("succeed!")
 }
