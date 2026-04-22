@@ -29,13 +29,20 @@ func main() {
 	// 	panic(err)
 	// }
 
-	if err := simple_sql.UpdateRaw(ctx, conn); err != nil {
+	// if err := simple_sql.UpdateRaw(ctx, conn); err != nil {
+	// 	panic(err)
+	// }
+
+	// if err := simple_sql.DeleteRow(ctx, conn); err != nil {
+	// 	panic(err)
+	// }
+
+	tasks, err := simple_sql.SelectRows(ctx, conn)
+	if err != nil {
 		panic(err)
 	}
 
-	if err := simple_sql.DeleteRow(ctx, conn); err != nil {
-		panic(err)
-	}
+	_ = tasks
 
 	fmt.Println("succeed!")
 }
