@@ -26,4 +26,6 @@ func main() {
 	fmt.Println(tasks)
 
 	fmt.Println("succeed!")
+
+	fmt.Println("Save streak")
 }
