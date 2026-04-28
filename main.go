@@ -12,4 +12,5 @@ func main() {
 	}
 
 	fmt.Println("save1")
+	fmt.Println("save2")
 }
