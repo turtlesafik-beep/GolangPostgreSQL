@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
@@ -11,5 +10,4 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("Save streak")
 }
