@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
@@ -11,6 +10,4 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("save1")
-	fmt.Println("save2")
 }
